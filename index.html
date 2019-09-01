@@ -1,0 +1,51 @@
+<html>
+  <head>
+     <!-- Load the latest version of TensorFlow.js -->
+     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   </head>
+
+   <body>
+
+      <div class="container">
+          <div class="jumbotron">
+            <h1>Transfer Learning Image Classifier</h1> 
+            <p>Simple Image WebCam Classifier using TensorFlowJs</p> 
+          </div>
+        </div>
+
+
+
+     <div id="console"></div>
+     <!-- Add an image that we will use to test -->
+     <div>
+     <video autoplay playsinline muted id="webcam" width="224" height="224"
+     style = "display: block; margin-left: auto; margin-right: auto;"></video>
+     <!-- Load index.js after the content of the page -->
+     <button id="class-a" type="button" class="btn btn-success">
+                 Class A</button>
+ 
+     <button id="class-b" id="class-c" class="btn btn-danger">
+        Class B</button>
+ 
+     <button id="class-c"  type="button" class="btn btn-primary">
+        Class C</button>
+
+        <button id="class-d"  type="button" class="btn btn-primary">
+            Class D</button>
+ 
+
+ 
+     <script src="index.js"></script>
+  </body>
+</html>
